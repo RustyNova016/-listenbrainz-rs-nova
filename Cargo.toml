@@ -1,0 +1,21 @@
+[package]
+name = "listenbrainz_rs_nova"
+version = "0.7.1"
+authors = ["Koen Bolhuis <koen.bolhuis@gmail.com>", "RustyNova"]
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/RustyNova016/listenbrainz-rs.git"
+homepage = "https://github.com/RustyNova016/listenbrainz-rs"
+readme = "README.md"
+description = "ListenBrainz API bindings for Rust"
+keywords = ["listenbrainz", "api", "bindings"]
+categories = ["api-bindings"]
+publish = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+thiserror = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+attohttpc = { version = "0.27", features = ["json"] }
